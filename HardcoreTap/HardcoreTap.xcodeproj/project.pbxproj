@@ -35,6 +35,12 @@
 		8D0B2BF11FC89BA400CE102C /* AboutGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B2BF01FC89BA400CE102C /* AboutGameVC.swift */; };
 		8D1BDC5A1FC9EB43003A3735 /* PrivateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1BDC591FC9EB43003A3735 /* PrivateInfo.swift */; };
 		8D4E36BD2008CC8200508D6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D4E36BC2008CC8200508D6B /* GoogleService-Info.plist */; };
+		8D4FB2D82070FDDA008B783C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4FB2D62070FDDA008B783C /* Interface.storyboard */; };
+		8D4FB2DA2070FDDE008B783C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4FB2D92070FDDE008B783C /* Assets.xcassets */; };
+		8D4FB2E12070FDDF008B783C /* HardcoreTap Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8D4FB2E02070FDDF008B783C /* HardcoreTap Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D4FB2E82070FDDF008B783C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FB2E72070FDDF008B783C /* ExtensionDelegate.swift */; };
+		8D4FB2EA2070FDDF008B783C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4FB2E92070FDDF008B783C /* Assets.xcassets */; };
+		8D4FB2EE2070FDDF008B783C /* HardcoreTap Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8D4FB2D42070FDDA008B783C /* HardcoreTap Watch.app */; };
 		8DAA24761FC7F80600282E06 /* RateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA24751FC7F80600282E06 /* RateManager.swift */; };
 		8DC8952820558E2E0058876D /* HardcoreTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8952720558E2E0058876D /* HardcoreTapUITests.swift */; };
 		8DC89531205590B90058876D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8952F205590B90058876D /* SnapshotHelper.swift */; };
@@ -42,6 +48,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8D4FB2E22070FDDF008B783C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CE12BF11FB62FED00945352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D4FB2DF2070FDDF008B783C;
+			remoteInfo = "HardcoreTap Watch Extension";
+		};
+		8D4FB2EC2070FDDF008B783C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CE12BF11FB62FED00945352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D4FB2D32070FDDA008B783C;
+			remoteInfo = "HardcoreTap Watch";
+		};
 		8DC8952A20558E2E0058876D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CE12BF11FB62FED00945352 /* Project object */;
@@ -50,6 +70,31 @@
 			remoteInfo = HardcoreTap;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D4FB2F42070FDE0008B783C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8D4FB2E12070FDDF008B783C /* HardcoreTap Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D4FB2F62070FDE0008B783C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8D4FB2EE2070FDDF008B783C /* HardcoreTap Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AAFEA8909DB74391B6B7085 /* Pods_HardcoreTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardcoreTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +129,14 @@
 		8D0B2BF01FC89BA400CE102C /* AboutGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutGameVC.swift; sourceTree = "<group>"; };
 		8D1BDC591FC9EB43003A3735 /* PrivateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateInfo.swift; sourceTree = "<group>"; };
 		8D4E36BC2008CC8200508D6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D4FB2D42070FDDA008B783C /* HardcoreTap Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HardcoreTap Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4FB2D72070FDDA008B783C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8D4FB2D92070FDDE008B783C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D4FB2DB2070FDDF008B783C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D4FB2E02070FDDF008B783C /* HardcoreTap Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HardcoreTap Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4FB2E72070FDDF008B783C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8D4FB2E92070FDDF008B783C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D4FB2EB2070FDDF008B783C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DAA24751FC7F80600282E06 /* RateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateManager.swift; sourceTree = "<group>"; };
 		8DC8952520558E2E0058876D /* HardcoreTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HardcoreTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC8952720558E2E0058876D /* HardcoreTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardcoreTapUITests.swift; sourceTree = "<group>"; };
@@ -98,6 +151,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				92269D36383B1F38F5969B3E /* Pods_HardcoreTap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D4FB2DD2070FDDF008B783C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +201,8 @@
 			children = (
 				3CE12BFB1FB62FED00945352 /* HardcoreTap */,
 				8DC8952620558E2E0058876D /* HardcoreTapUITests */,
+				8D4FB2D52070FDDA008B783C /* HardcoreTap Watch */,
+				8D4FB2E42070FDDF008B783C /* HardcoreTap Watch Extension */,
 				3CE12BFA1FB62FED00945352 /* Products */,
 				D7DDCF66F7DBCCB49B6EEB8F /* Pods */,
 				A1D86CDE2B60F3C896ECD78A /* Frameworks */,
@@ -152,6 +214,8 @@
 			children = (
 				3CE12BF91FB62FED00945352 /* HardcoreTap.app */,
 				8DC8952520558E2E0058876D /* HardcoreTapUITests.xctest */,
+				8D4FB2D42070FDDA008B783C /* HardcoreTap Watch.app */,
+				8D4FB2E02070FDDF008B783C /* HardcoreTap Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +246,26 @@
 				3CE12C031FB62FEE00945352 /* Assets.xcassets */,
 			);
 			path = HardcoreTap;
+			sourceTree = "<group>";
+		};
+		8D4FB2D52070FDDA008B783C /* HardcoreTap Watch */ = {
+			isa = PBXGroup;
+			children = (
+				8D4FB2D62070FDDA008B783C /* Interface.storyboard */,
+				8D4FB2D92070FDDE008B783C /* Assets.xcassets */,
+				8D4FB2DB2070FDDF008B783C /* Info.plist */,
+			);
+			path = "HardcoreTap Watch";
+			sourceTree = "<group>";
+		};
+		8D4FB2E42070FDDF008B783C /* HardcoreTap Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D4FB2E72070FDDF008B783C /* ExtensionDelegate.swift */,
+				8D4FB2E92070FDDF008B783C /* Assets.xcassets */,
+				8D4FB2EB2070FDDF008B783C /* Info.plist */,
+			);
+			path = "HardcoreTap Watch Extension";
 			sourceTree = "<group>";
 		};
 		8DC8952620558E2E0058876D /* HardcoreTapUITests */ = {
@@ -225,15 +309,51 @@
 				8D0B13C81FD2DC11009FEBA6 /* ShellScript */,
 				AD9DC2D863033CC4501DC800 /* [CP] Embed Pods Frameworks */,
 				E8D9B32B832C387965E82244 /* [CP] Copy Pods Resources */,
+				8D4FB2F62070FDE0008B783C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8D4FB2ED2070FDDF008B783C /* PBXTargetDependency */,
 			);
 			name = HardcoreTap;
 			productName = TimeKillerApp;
 			productReference = 3CE12BF91FB62FED00945352 /* HardcoreTap.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8D4FB2D32070FDDA008B783C /* HardcoreTap Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D4FB2F52070FDE0008B783C /* Build configuration list for PBXNativeTarget "HardcoreTap Watch" */;
+			buildPhases = (
+				8D4FB2D22070FDDA008B783C /* Resources */,
+				8D4FB2F42070FDE0008B783C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D4FB2E32070FDDF008B783C /* PBXTargetDependency */,
+			);
+			name = "HardcoreTap Watch";
+			productName = "HardcoreTap Watch";
+			productReference = 8D4FB2D42070FDDA008B783C /* HardcoreTap Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8D4FB2DF2070FDDF008B783C /* HardcoreTap Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D4FB2F32070FDE0008B783C /* Build configuration list for PBXNativeTarget "HardcoreTap Watch Extension" */;
+			buildPhases = (
+				8D4FB2DC2070FDDF008B783C /* Sources */,
+				8D4FB2DD2070FDDF008B783C /* Frameworks */,
+				8D4FB2DE2070FDDF008B783C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HardcoreTap Watch Extension";
+			productName = "HardcoreTap Watch Extension";
+			productReference = 8D4FB2E02070FDDF008B783C /* HardcoreTap Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		8DC8952420558E2E0058876D /* HardcoreTapUITests */ = {
 			isa = PBXNativeTarget;
@@ -259,13 +379,21 @@
 		3CE12BF11FB62FED00945352 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Bogdan Bystritskiy";
 				TargetAttributes = {
 					3CE12BF81FB62FED00945352 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Manual;
+					};
+					8D4FB2D32070FDDA008B783C = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					8D4FB2DF2070FDDF008B783C = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					8DC8952420558E2E0058876D = {
 						CreatedOnToolsVersion = 9.2;
@@ -289,6 +417,8 @@
 			targets = (
 				3CE12BF81FB62FED00945352 /* HardcoreTap */,
 				8DC8952420558E2E0058876D /* HardcoreTapUITests */,
+				8D4FB2D32070FDDA008B783C /* HardcoreTap Watch */,
+				8D4FB2DF2070FDDF008B783C /* HardcoreTap Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -313,6 +443,23 @@
 				3CE12C021FB62FEE00945352 /* Main.storyboard in Resources */,
 				3CA83B8B1FBA5D7B0046ED8D /* bmp60.mp3 in Resources */,
 				3C1B77361FBEB85100A4ADB3 /* SFUIDisplay-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D4FB2D22070FDDA008B783C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D4FB2DA2070FDDE008B783C /* Assets.xcassets in Resources */,
+				8D4FB2D82070FDDA008B783C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D4FB2DE2070FDDF008B783C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D4FB2EA2070FDDF008B783C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +577,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8D4FB2DC2070FDDF008B783C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D4FB2E82070FDDF008B783C /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC8952120558E2E0058876D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +597,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8D4FB2E32070FDDF008B783C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D4FB2DF2070FDDF008B783C /* HardcoreTap Watch Extension */;
+			targetProxy = 8D4FB2E22070FDDF008B783C /* PBXContainerItemProxy */;
+		};
+		8D4FB2ED2070FDDF008B783C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D4FB2D32070FDDA008B783C /* HardcoreTap Watch */;
+			targetProxy = 8D4FB2EC2070FDDF008B783C /* PBXContainerItemProxy */;
+		};
 		8DC8952B20558E2E0058876D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3CE12BF81FB62FED00945352 /* HardcoreTap */;
@@ -464,6 +629,14 @@
 				3CE12C061FB62FEE00945352 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8D4FB2D62070FDDA008B783C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D4FB2D72070FDDA008B783C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -623,6 +796,90 @@
 			};
 			name = Release;
 		};
+		8D4FB2EF2070FDE0008B783C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7AZ625QQ5;
+				IBSC_MODULE = HardcoreTap_Watch_Extension;
+				INFOPLIST_FILE = "HardcoreTap Watch/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bystritskiy.HardcoreTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		8D4FB2F02070FDE0008B783C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7AZ625QQ5;
+				ENABLE_NS_ASSERTIONS = NO;
+				IBSC_MODULE = HardcoreTap_Watch_Extension;
+				INFOPLIST_FILE = "HardcoreTap Watch/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bystritskiy.HardcoreTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		8D4FB2F12070FDE0008B783C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7AZ625QQ5;
+				INFOPLIST_FILE = "HardcoreTap Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bystritskiy.HardcoreTap.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		8D4FB2F22070FDE0008B783C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7AZ625QQ5;
+				ENABLE_NS_ASSERTIONS = NO;
+				INFOPLIST_FILE = "HardcoreTap Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bystritskiy.HardcoreTap.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 		8DC8952D20558E2E0058876D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -683,6 +940,24 @@
 			buildConfigurations = (
 				3CE12C0C1FB62FEE00945352 /* Debug */,
 				3CE12C0D1FB62FEE00945352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D4FB2F32070FDE0008B783C /* Build configuration list for PBXNativeTarget "HardcoreTap Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D4FB2F12070FDE0008B783C /* Debug */,
+				8D4FB2F22070FDE0008B783C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D4FB2F52070FDE0008B783C /* Build configuration list for PBXNativeTarget "HardcoreTap Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D4FB2EF2070FDE0008B783C /* Debug */,
+				8D4FB2F02070FDE0008B783C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
